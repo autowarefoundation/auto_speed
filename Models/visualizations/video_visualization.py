@@ -148,7 +148,7 @@ def main():
         print('Loading ONNX model...')
         model = AutoSpeedONNXInfer(onnx_path=model_path)
         print('ONNX Model Loaded')
-    elif model_path.endswith('.pt') or os.path.isdir(model_path):
+    elif model_path.endswith(('.pt', '.pth')) or os.path.isdir(model_path):
         print('Loading PyTorch model...')
         model = AutoSpeedNetworkInfer(checkpoint_path=model_path)
         print('PyTorch Model Loaded')
