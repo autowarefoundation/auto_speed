@@ -1,5 +1,5 @@
-# auto_speed
-Open-source AI model for in-path objects detection
+# AutoSpeed - In-path objects detection
+[![Watch the Video](/Media/auto_speed_thumbnail.jpg)](https://drive.google.com/file/d/1ehH3nRKsZLmPqZsqoqFuwyx6HCy2EVxe/preview)
 
 For autonomous cruise control applications, it is crucial to maintain a safe following distance from the vehicle in front, known as the closest-in-path object. Detecting the closest-in-path object therefore becomes a very important task for any self-driving or driver assitance application, as it also supports important safety features such as forward collision warning and autonomous emergency braking. The AutoSpeed network is a bounding box detection model inspired by the YOLOv11 architecture, in which the backbone c3k2 blocks are substitued by a custom designed 'context' block for improved overall scene understanding.
 
@@ -9,12 +9,11 @@ The AutoSpeed model detects all foreground objects and classifies objects into t
 - objects cutting-in/cutting-out of the future driving path of the ego-car
 - objects outside of the future driving path of the ego-car
 
-### Demo Video
-[![Watch the Video](/Media/auto_speed_thumbnail.jpg)](https://drive.google.com/file/d/1ehH3nRKsZLmPqZsqoqFuwyx6HCy2EVxe/preview)
-
 ## Get Started
 
 To easily try out the model on your own images and videos, please follow the steps in the [tutorial](tutorial.ipynb). For the best results, please ensure that your input video matches the aspect ratio of the model.
+
+### Tutorial
 
 ### Performance Results
 
